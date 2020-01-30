@@ -1,0 +1,37 @@
+body {
+    width: 100%;
+}
+
+/*similarities*/
+header, footer, aside .btn {
+    background-color: #579c87;
+    color: #fdcb46;
+}
+
+/*header*/
+header {
+    text-align: center;
+}
+
+/*main*/
+.fixed-size {
+    border: 2px solid black;
+    width: 350px;
+    height: 700px;
+    text-align: center;
+}
+
+.note {
+    background-color: #fcdfdb;
+}
+
+.chic {
+    background-color: #fff5fe;
+}
+/*aside*/
+
+/*footer*/
+footer {
+    display: flex;
+    justify-content: space-between;
+}
