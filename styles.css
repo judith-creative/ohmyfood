@@ -3,10 +3,23 @@ body {
 }
 
 /*similarities*/
-header, footer, aside .btn {
+body a {
+    text-decoration: none;
+}
+
+header, .btn, .btn a {
     background-color: #579c87;
     color: #fdcb46;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    font-size: 2.2em;
+    margin-bottom: 84px;
+    padding: 38.5px 0;
+    width: 665px;
+    text-align: center;
+    border-radius: 16px;
 }
 
 aside {
@@ -14,23 +27,20 @@ aside {
     justify-content: center;
 }
 
-aside .btn {
-    font-size: 2.2em;
-    margin: 84px 0;
-    padding: 38.5px 0;
-    width: 665px;
-    text-align: center;
-    border-radius: 16px;
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*.contact {
     order: 2;
 } -----------------DESKTOP*/
 
-footer .btn {
+/* footer .btn {
     font-size: 2em;
     padding: 50px 0;
-}
+} -----------------DESKTOP*/
 
 /*header*/
 header {
@@ -51,18 +61,60 @@ main {
     width: 535px;
     height: 770px;
     text-align: center;
+    margin-bottom: 84px;
 }
 
 .note {
     background-color: #fcdfdb;
+    color: #3d1319;
 }
 
 .chic {
     background-color: #fff5fe;
 }
+
+/*
+.chic p {
+    linear-gradient: #c77412 #a56799 #6e4ccc
+}
+*/
+
+.chic h1 {
+    color: #c77412;
+}
+
+.delice {
+    background-color: #edefef;
+}
+
+/*
+.delice p {
+    linear-gradient: #0228dd #0670f3 #229df9
+}
+*/
+
+.delice h1 {
+    color: #0887fb;
+}
+
+.palette {
+    background-color: #fdfffd;
+}
+
+/*
+.palette p {
+     linear-gradient: #3e923a #beff7f
+}
+*/
+
+.palette h1 {
+    color: #72bf56;
+}
+
 /*aside*/
 
 /*footer*/
+
 /* footer {
     display: flex;
     justify-content: space-between;
