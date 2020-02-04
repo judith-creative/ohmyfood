@@ -1,5 +1,6 @@
 body {
     width: 100%;
+    margin: 0;
 }
 
 /*similarities*/
@@ -11,6 +12,12 @@ header, .btn, .btn a {
     background-color: #579c87;
     color: #fdcb46;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 4em;
+    padding: 20px;
 }
 
 .btn {
