@@ -2,65 +2,63 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/CSS" href="styles.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:600&display=swap" /> 
-        <title>Ohmyfood</title>
+        <link href="https://fonts.googleapis.com/css?family=Alice|Bad+Script|Croissant+One|Devonshire|Kaushan+Script|Parisienne|Raleway:400,600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../../css/styles.css" />
+        <title>Ohmyfood - Composition de menus en ligne</title>
     </head>
    
     <body>
-        <header>
+        <header class="header">
             <h1>ohmyfood</h1>
         </header>
 
         <main>
             <a href="la_note_enchantee.html">
-                <div class="fixed-size note">
-                    <p>La note enchantée</p>
-                    <h1>Menu</h1>
+                <div class="menu-cover">
+                    <p class="__name-restaurant">La note enchantée</p>
+                    <h1 class="__heading">Menu</h1>
                 </div>
             </a>
 
             <a href="le_chic_a_la_francaise.html">
-                <div class="fixed-size chic">
-                    <p>Le chic à la française</p>
-                    <h1>Menu</h1>
+                <div class="menu-cover">
+                    <p class="__name-restaurant">Le chic à la française</p>
+                    <h1 class="__heading">Menu</h1>
                 </div>
             </a>
 
             <a href="le_delice_des_papilles.html">
-                <div class="fixed-size delice">
-                    <p>Le delice des papilles</p>
-                    <h1>Menu</h1>
+                <div class="menu-cover">
+                    <p class="__name-restaurant">Le delice des papilles</p>
+                    <h1 class="__heading">Menu</h1>
                 </div>
             </a>
 
             <a href="la_palette_du_gout.html">
-                <div class="fixed-size palette">
-                    <p>La palette des goûts</p>
-                    <h1>Menu</h1>
+                <div class="menu-cover">
+                    <p class="__name-restaurant">La palette des goûts</p>
+                    <h1 class="__heading">Menu</h1>
                 </div>
             </a>
         </main>
 
-        <aside>
-            <div class="btn pro">
-                Prochainement
-                <div class="comping_up">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
+        <div class="__button">
+            <a href="">Prochainement</a>
+            <div class="ellipsis">
+                <div class="__dot"></div>
+                <div class="__dot"></div>
+                <div class="__dot"></div>
             </div>
-        </aside>
+        </div>
 
-        <footer>
-            <div class="btn contact">
+        <footer class="footer">
+            <div class="__button">
                 <a href="mailto:reservation@ohmyfood.com">
                     Contactez-nous
                 </a>
             </div>
-            <div class="btn ml">
-                <a href="mentions_legales.pdf">Mentions légales</a>
+            <div class="__button">
+                <a href="mentions.html">Mentions légales</a>
             </div>
         </footer>
     </body>
