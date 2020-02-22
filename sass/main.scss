@@ -4,6 +4,14 @@ body {
 
 $background-color: #579c87;
 $logo-color: #fdcb46;
+$back-menu-one: #fcdfdb;
+$back-menu-two: #fff5fe;
+$back-menu-three: #f9f9f9;
+$back-menu-four: #fdfffd;
+$color-menu-one: #3c1218;
+$color-menu-two: #c77412;
+$color-menu-three: #0887fb;
+$color-menu-four: #72bf56;
 
 @mixin button {
     font-family: 'Raleway', sans-serif;
@@ -57,6 +65,58 @@ main {
     }
     &__restaurant-one {
             font-family: 'Devonshire', cursive;
-            color: #3c1218;
+            color: $color-menu-one;
         }
+}
+
+/*
+menu-one - la note enchantée
+menu-two - le chic à la française
+menu-three - le délice des papilles
+menu-four - la palette du goût
+*/
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+    font-family: 'Kalam', cursive;
+    font-size: 1.6em;
+    p {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        span:last-child{
+           font-weight: bold;
+        }
+    }
+}
+
+.__one {
+    background-color: $back-menu-one;
+    color: $color-menu-one;
+}
+
+.__two {
+    background-color: $back-menu-two;
+    font-family: 'PT Serif', serif;
+    .first-course {
+        color: #c67412;
+    }
+    .main-course {
+        color: #a56799;
+    }
+    .dessert {
+        color: #6e4ccc;
+    }
+}
+
+.__three {
+    background-color: $back-menu-three;
+}
+
+.__four {
+    background-color: $back-menu-four;
 }

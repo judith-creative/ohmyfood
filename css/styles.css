@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
 }
@@ -59,6 +60,57 @@ main {
 .menu-cover__restaurant-one {
   font-family: "Devonshire", cursive;
   color: #3c1218;
+}
+
+/*
+menu-one - la note enchantée
+menu-two - le chic à la française
+menu-three - le délice des papilles
+menu-four - la palette du goût
+*/
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 30px auto;
+  padding: 30px;
+  font-family: "Kalam", cursive;
+  font-size: 1.6em;
+}
+.menu p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.menu p span:last-child {
+  font-weight: bold;
+}
+
+.__one {
+  background-color: #fcdfdb;
+  color: #3c1218;
+}
+
+.__two {
+  background-color: #fff5fe;
+  font-family: "PT Serif", serif;
+}
+.__two .first-course {
+  color: #c67412;
+}
+.__two .main-course {
+  color: #a56799;
+}
+.__two .dessert {
+  color: #6e4ccc;
+}
+
+.__three {
+  background-color: #f9f9f9;
+}
+
+.__four {
+  background-color: #fdfffd;
 }
 
 /*# sourceMappingURL=styles.css.map */
