@@ -90,6 +90,32 @@ menu-four - la palette du goût
   background-color: #fcdfdb;
   color: #3c1218;
 }
+.__one h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.4em;
+  position: relative;
+}
+.__one h2:before {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 2px;
+  background: #3c1218;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.__one h2:after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 2px;
+  background: #3c1218;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
 
 .__two {
   background-color: #fff5fe;
@@ -98,19 +124,149 @@ menu-four - la palette du goût
 .__two .first-course {
   color: #c67412;
 }
+.__two .first-course h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.4em;
+  position: relative;
+}
+.__two .first-course h2:before {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 5px;
+  background: #c67412;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.__two .first-course h2:after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 5px;
+  background: #c67412;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
 .__two .main-course {
   color: #a56799;
 }
+.__two .main-course h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.4em;
+  position: relative;
+}
+.__two .main-course h2:before {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 5px;
+  background: #a56799;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.__two .main-course h2:after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 5px;
+  background: #a56799;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
 .__two .dessert {
   color: #6e4ccc;
+}
+.__two .dessert h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.4em;
+  position: relative;
+}
+.__two .dessert h2:before {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 5px;
+  background: #6e4ccc;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.__two .dessert h2:after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 5px;
+  background: #6e4ccc;
+  position: absolute;
+  right: 0;
+  top: 50%;
 }
 
 .__three {
   background-color: #f9f9f9;
 }
+.__three h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.4em;
+  position: relative;
+}
+.__three h2:before {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 4px;
+  background: #0887fb;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.__three h2:after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 4px;
+  background: #0887fb;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
 
 .__four {
   background-color: #fdfffd;
+}
+.__four h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.4em;
+  position: relative;
+}
+.__four h2:before {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 4px;
+  background: #72bf56;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.__four h2:after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 4px;
+  background: #72bf56;
+  position: absolute;
+  right: 0;
+  top: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */

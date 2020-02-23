@@ -24,6 +24,35 @@ $color-menu-four: #72bf56;
     }
 }
 
+@mixin title-line {
+    margin: 0;
+    text-align: center;
+    font-size: 1.4em;
+    position: relative;
+}
+
+@mixin title-line-left($color, $width: 30%, $thickness: 4px) {
+    content: "";
+    display: block;
+    width: $width;
+    height: $thickness;
+    background: $color;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+@mixin title-line-right($color, $width: 30%, $thickness: 4px) {
+    content: "";
+    display: block;
+    width: $width;
+    height: $thickness;
+    background: $color;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
 /*similarities on all pages*/
 footer {
     @include button;
@@ -97,6 +126,15 @@ menu-four - la palette du goût
 .__one {
     background-color: $back-menu-one;
     color: $color-menu-one;
+    h2 {
+        @include title-line;
+        &:before {
+            @include title-line-left($color-menu-one, 30%, 2px)
+        }
+        &:after {
+            @include title-line-right($color-menu-one, 30%, 2px);
+        }
+    }
 }
 
 .__two {
@@ -104,19 +142,64 @@ menu-four - la palette du goût
     font-family: 'PT Serif', serif;
     .first-course {
         color: #c67412;
+        h2 {
+            @include title-line;
+        &:before {
+            @include title-line-left(#c67412, 25%, 5px)
+        }
+        &:after {
+            @include title-line-right(#c67412, 25%, 5px)
+        }
+        }
     }
     .main-course {
         color: #a56799;
+        h2 {
+            @include title-line;
+        &:before {
+            @include title-line-left(#a56799, 25%, 5px)
+        }
+        &:after {
+            @include title-line-right(#a56799, 25%, 5px)
+        }
+        }
     }
     .dessert {
         color: #6e4ccc;
+        h2 {
+            @include title-line;
+        &:before {
+            @include title-line-left(#6e4ccc, 25%, 5px)
+        }
+        &:after {
+            @include title-line-right(#6e4ccc, 25%, 5px)
+        }
+        }
     }
 }
 
 .__three {
     background-color: $back-menu-three;
+    h2 {
+        @include title-line;
+        &:before {
+            @include title-line-left($color-menu-three, 30%, 4px)
+        }
+        &:after {
+            @include title-line-right($color-menu-three, 30%, 4px)
+        }
+    }
 }
 
 .__four {
     background-color: $back-menu-four;
+    h2 {
+        @include title-line;
+        &:before {
+            @include title-line-left($color-menu-four, 30%, 4px)
+        }
+        &:after {
+            @include title-line-right($color-menu-four, 30%, 4px)
+        }
+    }
 }
