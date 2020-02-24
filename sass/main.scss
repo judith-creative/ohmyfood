@@ -24,8 +24,14 @@ $color-menu-four: #72bf56;
     }
 }
 
-@mixin title-line {
+@mixin menu-title($font-family, $color) {
+    font-family: $font-family;
+    color: $color;
     margin: 0;
+}
+
+@mixin title-line {
+    margin: 50px 0 28px 0;
     text-align: center;
     font-size: 1.4em;
     position: relative;
@@ -86,15 +92,20 @@ main {
 .menu-cover {
     height: 700px;
     margin: 30px 0;
+    border: 2px solid grey;
+    text-align: center;
     a {
         text-decoration: none;
         display: block;
         width: 100%;
         height: 100%;
     }
-    &__restaurant-one {
+    __restaurant-one {
             font-family: 'Devonshire', cursive;
             color: $color-menu-one;
+        }
+    __heading {
+            font-family: 'Bad Script', cursive;
         }
 }
 
@@ -111,9 +122,17 @@ menu-four - la palette du goût
     width: 80%;
     margin: 30px auto;
     padding: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
     font-family: 'Kalam', cursive;
-    font-size: 1.6em;
+    font-size: 0.8em;
+    @media (min-width: 768px) and (orientation: landscape) {
+        font-size: 1.6em;
+    }
+    h2 {
+        margin-top: 200px;
+    }
     p {
+        line-height: 2em;
         display: flex;
         justify-content: space-between;
         margin: 0;
@@ -126,6 +145,17 @@ menu-four - la palette du goût
 .__one {
     background-color: $back-menu-one;
     color: $color-menu-one;
+    i {
+        text-align: center;
+        font-size: 2.5em;
+        color: #f15f62;
+    }
+    h1 {
+        @include menu-title('Devonshire', $color-menu-one);
+        i {
+            font-size: 1em;
+        }
+    }
     h2 {
         @include title-line;
         &:before {
@@ -139,10 +169,13 @@ menu-four - la palette du goût
 
 .__two {
     background-color: $back-menu-two;
+    h1 {
+        @include menu-title('Croissant One', #6e4ccc);
+    }
     font-family: 'PT Serif', serif;
     .first-course {
         color: #c67412;
-        h2 {
+    h2 {
             @include title-line;
         &:before {
             @include title-line-left(#c67412, 25%, 5px)
@@ -180,6 +213,9 @@ menu-four - la palette du goût
 
 .__three {
     background-color: $back-menu-three;
+    h1 {
+        @include menu-title('Parisienne', $color-menu-three);
+    }
     h2 {
         @include title-line;
         &:before {
@@ -193,6 +229,9 @@ menu-four - la palette du goût
 
 .__four {
     background-color: $back-menu-four;
+    h1 {
+        @include menu-title('Kaushan Script', $color-menu-four);
+    }
     h2 {
         @include title-line;
         &:before {

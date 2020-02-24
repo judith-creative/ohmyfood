@@ -50,6 +50,8 @@ main {
 .menu-cover {
   height: 700px;
   margin: 30px 0;
+  border: 2px solid grey;
+  text-align: center;
 }
 .menu-cover a {
   text-decoration: none;
@@ -57,9 +59,12 @@ main {
   width: 100%;
   height: 100%;
 }
-.menu-cover__restaurant-one {
+.menu-cover __restaurant-one {
   font-family: "Devonshire", cursive;
   color: #3c1218;
+}
+.menu-cover __heading {
+  font-family: "Bad Script", cursive;
 }
 
 /*
@@ -74,10 +79,20 @@ menu-four - la palette du goût
   width: 80%;
   margin: 30px auto;
   padding: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
   font-family: "Kalam", cursive;
-  font-size: 1.6em;
+  font-size: 0.8em;
+}
+@media (min-width: 768px) and (orientation: landscape) {
+  .menu {
+    font-size: 1.6em;
+  }
+}
+.menu h2 {
+  margin-top: 200px;
 }
 .menu p {
+  line-height: 2em;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -90,8 +105,21 @@ menu-four - la palette du goût
   background-color: #fcdfdb;
   color: #3c1218;
 }
-.__one h2 {
+.__one i {
+  text-align: center;
+  font-size: 2.5em;
+  color: #f15f62;
+}
+.__one h1 {
+  font-family: "Devonshire";
+  color: #3c1218;
   margin: 0;
+}
+.__one h1 i {
+  font-size: 1em;
+}
+.__one h2 {
+  margin: 50px 0 28px 0;
   text-align: center;
   font-size: 1.4em;
   position: relative;
@@ -121,11 +149,16 @@ menu-four - la palette du goût
   background-color: #fff5fe;
   font-family: "PT Serif", serif;
 }
+.__two h1 {
+  font-family: "Croissant One";
+  color: #6e4ccc;
+  margin: 0;
+}
 .__two .first-course {
   color: #c67412;
 }
 .__two .first-course h2 {
-  margin: 0;
+  margin: 50px 0 28px 0;
   text-align: center;
   font-size: 1.4em;
   position: relative;
@@ -154,7 +187,7 @@ menu-four - la palette du goût
   color: #a56799;
 }
 .__two .main-course h2 {
-  margin: 0;
+  margin: 50px 0 28px 0;
   text-align: center;
   font-size: 1.4em;
   position: relative;
@@ -183,7 +216,7 @@ menu-four - la palette du goût
   color: #6e4ccc;
 }
 .__two .dessert h2 {
-  margin: 0;
+  margin: 50px 0 28px 0;
   text-align: center;
   font-size: 1.4em;
   position: relative;
@@ -212,8 +245,13 @@ menu-four - la palette du goût
 .__three {
   background-color: #f9f9f9;
 }
-.__three h2 {
+.__three h1 {
+  font-family: "Parisienne";
+  color: #0887fb;
   margin: 0;
+}
+.__three h2 {
+  margin: 50px 0 28px 0;
   text-align: center;
   font-size: 1.4em;
   position: relative;
@@ -242,8 +280,13 @@ menu-four - la palette du goût
 .__four {
   background-color: #fdfffd;
 }
-.__four h2 {
+.__four h1 {
+  font-family: "Kaushan Script";
+  color: #72bf56;
   margin: 0;
+}
+.__four h2 {
+  margin: 50px 0 28px 0;
   text-align: center;
   font-size: 1.4em;
   position: relative;
