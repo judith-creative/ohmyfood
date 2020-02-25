@@ -90,6 +90,9 @@ main, .contenu {
 }
 
 footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
     @media (min-width: 768px) and (orientation: landscape) {
         display: flex;
         justify-content: space-between;

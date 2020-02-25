@@ -40,6 +40,11 @@ main, .contenu {
   margin: auto;
 }
 
+footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
 @media (min-width: 768px) and (orientation: landscape) {
   footer {
     display: flex;
