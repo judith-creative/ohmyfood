@@ -204,6 +204,7 @@ menu-four - la palette du goût
   position: absolute;
   left: 0;
   top: 50%;
+  transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__one h2:after {
   content: "";
@@ -214,6 +215,15 @@ menu-four - la palette du goût
   position: absolute;
   right: 0;
   top: 50%;
+  transition: width;
+}
+.__one h2:hover:before {
+  top: 100%;
+  bottom: 0%;
+  width: 100%;
+}
+.__one h2:hover:after {
+  width: 0%;
 }
 
 .__two {
@@ -243,6 +253,7 @@ menu-four - la palette du goût
   position: absolute;
   left: 0;
   top: 50%;
+  transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__two .first-course h2:after {
   content: "";
@@ -253,6 +264,15 @@ menu-four - la palette du goût
   position: absolute;
   right: 0;
   top: 50%;
+  transition: width;
+}
+.__two .first-course h2:hover:before {
+  top: 100%;
+  bottom: 0%;
+  width: 100%;
+}
+.__two .first-course h2:hover:after {
+  width: 0%;
 }
 .__two .main-course {
   color: #a56799;
@@ -272,6 +292,7 @@ menu-four - la palette du goût
   position: absolute;
   left: 0;
   top: 50%;
+  transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__two .main-course h2:after {
   content: "";
@@ -282,6 +303,15 @@ menu-four - la palette du goût
   position: absolute;
   right: 0;
   top: 50%;
+  transition: width;
+}
+.__two .main-course h2:hover:before {
+  top: 100%;
+  bottom: 0%;
+  width: 100%;
+}
+.__two .main-course h2:hover:after {
+  width: 0%;
 }
 .__two .dessert {
   color: #6e4ccc;
@@ -301,6 +331,7 @@ menu-four - la palette du goût
   position: absolute;
   left: 0;
   top: 50%;
+  transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__two .dessert h2:after {
   content: "";
@@ -311,6 +342,15 @@ menu-four - la palette du goût
   position: absolute;
   right: 0;
   top: 50%;
+  transition: width;
+}
+.__two .dessert h2:hover:before {
+  top: 100%;
+  bottom: 0%;
+  width: 100%;
+}
+.__two .dessert h2:hover:after {
+  width: 0%;
 }
 
 .__three {
@@ -336,6 +376,7 @@ menu-four - la palette du goût
   position: absolute;
   left: 0;
   top: 50%;
+  transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__three h2:after {
   content: "";
@@ -346,6 +387,15 @@ menu-four - la palette du goût
   position: absolute;
   right: 0;
   top: 50%;
+  transition: width;
+}
+.__three h2:hover:before {
+  top: 100%;
+  bottom: 0%;
+  width: 100%;
+}
+.__three h2:hover:after {
+  width: 0%;
 }
 
 .__four {
@@ -371,6 +421,7 @@ menu-four - la palette du goût
   position: absolute;
   left: 0;
   top: 50%;
+  transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__four h2:after {
   content: "";
@@ -381,6 +432,15 @@ menu-four - la palette du goût
   position: absolute;
   right: 0;
   top: 50%;
+  transition: width;
+}
+.__four h2:hover:before {
+  top: 100%;
+  bottom: 0%;
+  width: 100%;
+}
+.__four h2:hover:after {
+  width: 0%;
 }
 
 /*# sourceMappingURL=styles.css.map */
