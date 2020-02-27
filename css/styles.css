@@ -119,15 +119,15 @@ header h1 {
 }
 
 .menu-cover {
-  height: 700px;
+  height: auto;
   margin: 30px 0;
   border: 2px solid grey;
   overflow: hidden;
 }
 .menu-cover img {
-  height: 700px;
+  height: auto;
   margin: 0;
-  width: 100%;
+  max-width: 100%;
 }
 .menu-cover img:hover {
   animation: zoom 1500ms ease-in-out forwards;
