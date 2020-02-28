@@ -42,27 +42,25 @@ $color-menu-four: #72bf56;
     position: relative;
 }
 
-@mixin title-line-left($color, $width: 30%, $thickness: 4px) {
+@mixin side-title-line-common($color, $width: 30%, $thickness: 4px) {
     content: "";
     display: block;
     width: $width;
     height: $thickness;
     background: $color;
     position: absolute;
-    left: 0;
     top: 50%;
+}
+
+@mixin title-line-left($color, $width: 30%, $thickness: 4px) {
+    @include side-title-line-common($color, $width, $thickness);
+    left: 0;
     transition: width .4s cubic-bezier(0, .5, 0, 1);
 }
 
 @mixin title-line-right($color, $width: 30%, $thickness: 4px) {
-    content: "";
-    display: block;
-    width: $width;
-    height: $thickness;
-    background: $color;
-    position: absolute;
+    @include side-title-line-common($color, $width, $thickness);
     right: 0;
-    top: 50%;
     transition: width;
 }
 
@@ -309,10 +307,10 @@ menu-four - la palette du goût
     h2 {
         @include title-line;
         &:before {
-            @include title-line-left($color-menu-one, 30%, 2px);
+            @include title-line-left($color-menu-one);
         }
         &:after {
-            @include title-line-right($color-menu-one, 30%, 2px);
+            @include title-line-right($color-menu-one);
         }
         &:hover:before {
             @include underline-left-to-right;

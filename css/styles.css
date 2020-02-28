@@ -280,22 +280,22 @@ menu-four - la palette du goût
   content: "";
   display: block;
   width: 30%;
-  height: 2px;
+  height: 4px;
   background: #3c1218;
   position: absolute;
-  left: 0;
   top: 50%;
+  left: 0;
   transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__one h2:after {
   content: "";
   display: block;
   width: 30%;
-  height: 2px;
+  height: 4px;
   background: #3c1218;
   position: absolute;
-  right: 0;
   top: 50%;
+  right: 0;
   transition: width;
 }
 .__one h2:hover:before {
@@ -332,8 +332,8 @@ menu-four - la palette du goût
   height: 5px;
   background: #c67412;
   position: absolute;
-  left: 0;
   top: 50%;
+  left: 0;
   transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__two .first-course h2:after {
@@ -343,8 +343,8 @@ menu-four - la palette du goût
   height: 5px;
   background: #c67412;
   position: absolute;
-  right: 0;
   top: 50%;
+  right: 0;
   transition: width;
 }
 .__two .first-course h2:hover:before {
@@ -371,8 +371,8 @@ menu-four - la palette du goût
   height: 5px;
   background: #a56799;
   position: absolute;
-  left: 0;
   top: 50%;
+  left: 0;
   transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__two .main-course h2:after {
@@ -382,8 +382,8 @@ menu-four - la palette du goût
   height: 5px;
   background: #a56799;
   position: absolute;
-  right: 0;
   top: 50%;
+  right: 0;
   transition: width;
 }
 .__two .main-course h2:hover:before {
@@ -410,8 +410,8 @@ menu-four - la palette du goût
   height: 5px;
   background: #6e4ccc;
   position: absolute;
-  left: 0;
   top: 50%;
+  left: 0;
   transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__two .dessert h2:after {
@@ -421,8 +421,8 @@ menu-four - la palette du goût
   height: 5px;
   background: #6e4ccc;
   position: absolute;
-  right: 0;
   top: 50%;
+  right: 0;
   transition: width;
 }
 .__two .dessert h2:hover:before {
@@ -455,8 +455,8 @@ menu-four - la palette du goût
   height: 4px;
   background: #0887fb;
   position: absolute;
-  left: 0;
   top: 50%;
+  left: 0;
   transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__three h2:after {
@@ -466,8 +466,8 @@ menu-four - la palette du goût
   height: 4px;
   background: #0887fb;
   position: absolute;
-  right: 0;
   top: 50%;
+  right: 0;
   transition: width;
 }
 .__three h2:hover:before {
@@ -500,8 +500,8 @@ menu-four - la palette du goût
   height: 4px;
   background: #72bf56;
   position: absolute;
-  left: 0;
   top: 50%;
+  left: 0;
   transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__four h2:after {
@@ -511,8 +511,8 @@ menu-four - la palette du goût
   height: 4px;
   background: #72bf56;
   position: absolute;
-  right: 0;
   top: 50%;
+  right: 0;
   transition: width;
 }
 .__four h2:hover:before {
