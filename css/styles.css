@@ -143,20 +143,25 @@ header h1 {
 }
 .menu-cover.one p {
   font-family: "Devonshire", cursive;
-  font-size: 4em;
+  font-size: 3.5em;
   color: #3c1218;
 }
 .menu-cover.one h1 {
   color: #3c1218;
   font-size: 2.5em;
+  text-transform: uppercase;
 }
 .menu-cover.two {
   background-color: #fff5fe;
 }
 .menu-cover.two p {
   font-family: "Croissant One", cursive;
-  font-size: 4em;
+  font-size: 2.5em;
   color: #c77412;
+  background: -webkit-linear-gradient(left, #c77412, #a56799, #6e4ccc);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu-cover.two h1 {
   font-family: "Alice", serif;
@@ -168,8 +173,11 @@ header h1 {
 }
 .menu-cover.three p {
   font-family: "Parisienne", cursive;
-  font-size: 4em;
+  font-size: 3.5em;
   color: #0887fb;
+  background: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu-cover.three h1 {
   color: #0887fb;
@@ -180,8 +188,11 @@ header h1 {
 }
 .menu-cover.four p {
   font-family: "Kaushan Script", cursive;
-  font-size: 4em;
+  font-size: 3.5em;
   color: #72bf56;
+  background: -webkit-linear-gradient(left, #3e923a, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu-cover.four h1 {
   color: #72bf56;

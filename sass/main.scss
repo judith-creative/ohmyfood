@@ -177,20 +177,25 @@ header {
         }
         p {
             font-family: 'Devonshire', cursive;
-            font-size: 4em;
+            font-size: 3.5em;
             color: $color-menu-one;
         }
         h1 {
             color: $color-menu-one;
             font-size: 2.5em;
+            text-transform: uppercase;
         }
     }
     &.two {
         background-color: $back-menu-two;
         p {
             font-family: 'Croissant One', cursive;
-            font-size: 4em;
+            font-size: 2.5em;
             color: $color-menu-two;
+            background: -webkit-linear-gradient(left, #c77412, #a56799, #6e4ccc);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         h1 {
             font-family: 'Alice', serif;    
@@ -202,8 +207,11 @@ header {
         background-color: $back-menu-three;
         p {
             font-family: 'Parisienne', cursive;
-            font-size: 4em;
+            font-size: 3.5em;
             color: $color-menu-three;
+            background: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         h1 {
             color: $color-menu-three;
@@ -214,8 +222,11 @@ header {
         background-color: $back-menu-four;
         p {
             font-family: 'Kaushan Script', cursive;
-            font-size: 4em;
+            font-size: 3.5em;
             color: $color-menu-four;
+            background: -webkit-linear-gradient(left, #3e923a, #beff7f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         h1 {
             color: $color-menu-four;
