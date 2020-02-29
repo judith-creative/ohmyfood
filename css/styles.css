@@ -143,8 +143,13 @@ header h1 {
 }
 .menu-cover.one p {
   font-family: "Devonshire", cursive;
-  font-size: 3.5em;
+  font-size: 2em;
   color: #3c1218;
+}
+@media (min-width: 768px) and (orientation: landscape) {
+  .menu-cover.one p {
+    font-size: 3.5em;
+  }
 }
 .menu-cover.one h1 {
   color: #3c1218;
@@ -156,12 +161,17 @@ header h1 {
 }
 .menu-cover.two p {
   font-family: "Croissant One", cursive;
-  font-size: 2.5em;
+  font-size: 1.5em;
   color: #c77412;
   background: -webkit-linear-gradient(left, #c77412, #a56799, #6e4ccc);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media (min-width: 768px) and (orientation: landscape) {
+  .menu-cover.two p {
+    font-size: 2.5em;
+  }
 }
 .menu-cover.two h1 {
   font-family: "Alice", serif;
@@ -173,11 +183,16 @@ header h1 {
 }
 .menu-cover.three p {
   font-family: "Parisienne", cursive;
-  font-size: 3.5em;
+  font-size: 2em;
   color: #0887fb;
   background: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media (min-width: 768px) and (orientation: landscape) {
+  .menu-cover.three p {
+    font-size: 3.5em;
+  }
 }
 .menu-cover.three h1 {
   color: #0887fb;
@@ -188,15 +203,32 @@ header h1 {
 }
 .menu-cover.four p {
   font-family: "Kaushan Script", cursive;
-  font-size: 3.5em;
+  font-size: 2em;
   color: #72bf56;
   background: -webkit-linear-gradient(left, #3e923a, #beff7f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (min-width: 768px) and (orientation: landscape) {
+  .menu-cover.four p {
+    font-size: 3.5em;
+  }
+}
 .menu-cover.four h1 {
   color: #72bf56;
   font-size: 2.5em;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .soon {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .footer .__button {
+    margin-bottom: 0;
+  }
 }
 
 .__button:nth-child(3) {
@@ -284,13 +316,13 @@ menu-four - la palette du goût
 .__one h2 {
   margin: 50px 0 28px 0;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.2em;
   position: relative;
 }
-.__one h2:before {
+.__one h2::before {
   content: "";
   display: block;
-  width: 30%;
+  width: 23%;
   height: 4px;
   background: #3c1218;
   position: absolute;
@@ -298,10 +330,10 @@ menu-four - la palette du goût
   left: 0;
   transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
-.__one h2:after {
+.__one h2::after {
   content: "";
   display: block;
-  width: 30%;
+  width: 23%;
   height: 4px;
   background: #3c1218;
   position: absolute;
@@ -309,12 +341,12 @@ menu-four - la palette du goût
   right: 0;
   transition: width;
 }
-.__one h2:hover:before {
+.__one h2:hover::before {
   top: 100%;
   bottom: 0%;
   width: 100%;
 }
-.__one h2:hover:after {
+.__one h2:hover::after {
   width: 0%;
 }
 
@@ -333,37 +365,37 @@ menu-four - la palette du goût
 .__two .first-course h2 {
   margin: 50px 0 28px 0;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.2em;
   position: relative;
 }
-.__two .first-course h2:before {
+.__two .first-course h2::before {
   content: "";
   display: block;
-  width: 25%;
-  height: 5px;
+  width: 15%;
+  height: 6px;
   background: #c67412;
   position: absolute;
   top: 50%;
   left: 0;
   transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
-.__two .first-course h2:after {
+.__two .first-course h2::after {
   content: "";
   display: block;
-  width: 25%;
-  height: 5px;
+  width: 15%;
+  height: 6px;
   background: #c67412;
   position: absolute;
   top: 50%;
   right: 0;
   transition: width;
 }
-.__two .first-course h2:hover:before {
+.__two .first-course h2:hover::before {
   top: 100%;
   bottom: 0%;
   width: 100%;
 }
-.__two .first-course h2:hover:after {
+.__two .first-course h2:hover::after {
   width: 0%;
 }
 .__two .main-course {
@@ -372,37 +404,37 @@ menu-four - la palette du goût
 .__two .main-course h2 {
   margin: 50px 0 28px 0;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.2em;
   position: relative;
 }
-.__two .main-course h2:before {
+.__two .main-course h2::before {
   content: "";
   display: block;
-  width: 25%;
-  height: 5px;
+  width: 18%;
+  height: 6px;
   background: #a56799;
   position: absolute;
   top: 50%;
   left: 0;
   transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
-.__two .main-course h2:after {
+.__two .main-course h2::after {
   content: "";
   display: block;
-  width: 25%;
-  height: 5px;
+  width: 18%;
+  height: 6px;
   background: #a56799;
   position: absolute;
   top: 50%;
   right: 0;
   transition: width;
 }
-.__two .main-course h2:hover:before {
+.__two .main-course h2:hover::before {
   top: 100%;
   bottom: 0%;
   width: 100%;
 }
-.__two .main-course h2:hover:after {
+.__two .main-course h2:hover::after {
   width: 0%;
 }
 .__two .dessert {
@@ -411,37 +443,37 @@ menu-four - la palette du goût
 .__two .dessert h2 {
   margin: 50px 0 28px 0;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.2em;
   position: relative;
 }
-.__two .dessert h2:before {
+.__two .dessert h2::before {
   content: "";
   display: block;
-  width: 25%;
-  height: 5px;
+  width: 18%;
+  height: 6px;
   background: #6e4ccc;
   position: absolute;
   top: 50%;
   left: 0;
   transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
-.__two .dessert h2:after {
+.__two .dessert h2::after {
   content: "";
   display: block;
-  width: 25%;
-  height: 5px;
+  width: 18%;
+  height: 6px;
   background: #6e4ccc;
   position: absolute;
   top: 50%;
   right: 0;
   transition: width;
 }
-.__two .dessert h2:hover:before {
+.__two .dessert h2:hover::before {
   top: 100%;
   bottom: 0%;
   width: 100%;
 }
-.__two .dessert h2:hover:after {
+.__two .dessert h2:hover::after {
   width: 0%;
 }
 
@@ -456,13 +488,13 @@ menu-four - la palette du goût
 .__three h2 {
   margin: 50px 0 28px 0;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.2em;
   position: relative;
 }
-.__three h2:before {
+.__three h2::before {
   content: "";
   display: block;
-  width: 30%;
+  width: 23%;
   height: 4px;
   background: #0887fb;
   position: absolute;
@@ -470,10 +502,10 @@ menu-four - la palette du goût
   left: 0;
   transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
-.__three h2:after {
+.__three h2::after {
   content: "";
   display: block;
-  width: 30%;
+  width: 23%;
   height: 4px;
   background: #0887fb;
   position: absolute;
@@ -481,12 +513,12 @@ menu-four - la palette du goût
   right: 0;
   transition: width;
 }
-.__three h2:hover:before {
+.__three h2:hover::before {
   top: 100%;
   bottom: 0%;
   width: 100%;
 }
-.__three h2:hover:after {
+.__three h2:hover::after {
   width: 0%;
 }
 
@@ -501,13 +533,13 @@ menu-four - la palette du goût
 .__four h2 {
   margin: 50px 0 28px 0;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.2em;
   position: relative;
 }
-.__four h2:before {
+.__four h2::before {
   content: "";
   display: block;
-  width: 30%;
+  width: 23%;
   height: 4px;
   background: #72bf56;
   position: absolute;
@@ -515,10 +547,10 @@ menu-four - la palette du goût
   left: 0;
   transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
-.__four h2:after {
+.__four h2::after {
   content: "";
   display: block;
-  width: 30%;
+  width: 23%;
   height: 4px;
   background: #72bf56;
   position: absolute;
@@ -526,12 +558,12 @@ menu-four - la palette du goût
   right: 0;
   transition: width;
 }
-.__four h2:hover:before {
+.__four h2:hover::before {
   top: 100%;
   bottom: 0%;
   width: 100%;
 }
-.__four h2:hover:after {
+.__four h2:hover::after {
   width: 0%;
 }
 

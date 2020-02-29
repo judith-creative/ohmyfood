@@ -38,11 +38,11 @@ $color-menu-four: #72bf56;
 @mixin title-line {
     margin: 50px 0 28px 0;
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.2em;
     position: relative;
 }
 
-@mixin side-title-line-common($color, $width: 30%, $thickness: 4px) {
+@mixin side-title-line-common($color, $width: 23%, $thickness: 4px) {
     content: "";
     display: block;
     width: $width;
@@ -52,13 +52,13 @@ $color-menu-four: #72bf56;
     top: 50%;
 }
 
-@mixin title-line-left($color, $width: 30%, $thickness: 4px) {
+@mixin title-line-left($color, $width: 23%, $thickness: 4px) {
     @include side-title-line-common($color, $width, $thickness);
     left: 0;
     transition: width .4s cubic-bezier(0, .5, 0, 1);
 }
 
-@mixin title-line-right($color, $width: 30%, $thickness: 4px) {
+@mixin title-line-right($color, $width: 23%, $thickness: 4px) {
     @include side-title-line-common($color, $width, $thickness);
     right: 0;
     transition: width;
@@ -177,8 +177,11 @@ header {
         }
         p {
             font-family: 'Devonshire', cursive;
-            font-size: 3.5em;
+            font-size: 2em;
             color: $color-menu-one;
+            @media (min-width: 768px) and (orientation: landscape) {
+                font-size: 3.5em;
+            }
         }
         h1 {
             color: $color-menu-one;
@@ -190,7 +193,10 @@ header {
         background-color: $back-menu-two;
         p {
             font-family: 'Croissant One', cursive;
-            font-size: 2.5em;
+            font-size: 1.5em;
+            @media (min-width: 768px) and (orientation: landscape) {
+                font-size: 2.5em;
+            }
             color: $color-menu-two;
             background: -webkit-linear-gradient(left, #c77412, #a56799, #6e4ccc);
             background-clip: border-box;
@@ -207,7 +213,10 @@ header {
         background-color: $back-menu-three;
         p {
             font-family: 'Parisienne', cursive;
-            font-size: 3.5em;
+            font-size: 2em;
+            @media (min-width: 768px) and (orientation: landscape) {
+                font-size: 3.5em;
+            }
             color: $color-menu-three;
             background: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);
             -webkit-background-clip: text;
@@ -222,7 +231,10 @@ header {
         background-color: $back-menu-four;
         p {
             font-family: 'Kaushan Script', cursive;
-            font-size: 3.5em;
+            font-size: 2em;
+            @media (min-width: 768px) and (orientation: landscape) {
+                font-size: 3.5em;
+            }
             color: $color-menu-four;
             background: -webkit-linear-gradient(left, #3e923a, #beff7f);
             -webkit-background-clip: text;
@@ -231,6 +243,20 @@ header {
         h1 {
             color: $color-menu-four;
             font-size: 2.5em;
+        }
+    }
+}
+
+.soon {
+    @media (min-width: 768px) and (orientation: landscape) {
+        width: 50%;
+    }
+}
+
+.footer {
+    .__button {
+        @media (min-width: 768px) and (orientation: landscape) {
+            margin-bottom: 0;
         }
     }
 }
@@ -317,16 +343,16 @@ menu-four - la palette du goût
     }
     h2 {
         @include title-line;
-        &:before {
+        &::before {
             @include title-line-left($color-menu-one);
         }
-        &:after {
+        &::after {
             @include title-line-right($color-menu-one);
         }
-        &:hover:before {
+        &:hover::before {
             @include underline-left-to-right;
         }
-        &:hover:after {
+        &:hover::after {
             width: 0%;
         }
     }
@@ -342,16 +368,16 @@ menu-four - la palette du goût
         color: #c67412;
     h2 {
             @include title-line;
-        &:before {
-            @include title-line-left(#c67412, 25%, 5px)
+        &::before {
+            @include title-line-left(#c67412, 15%, 6px)
         }
-        &:after {
-            @include title-line-right(#c67412, 25%, 5px)
+        &::after {
+            @include title-line-right(#c67412, 15%, 6px)
         }
-        &:hover:before {
+        &:hover::before {
             @include underline-left-to-right;
         }
-        &:hover:after {
+        &:hover::after {
             width: 0%;
         }
         }
@@ -360,16 +386,16 @@ menu-four - la palette du goût
         color: #a56799;
         h2 {
             @include title-line;
-        &:before {
-            @include title-line-left(#a56799, 25%, 5px)
+        &::before {
+            @include title-line-left(#a56799, 18%, 6px)
         }
-        &:after {
-            @include title-line-right(#a56799, 25%, 5px)
+        &::after {
+            @include title-line-right(#a56799, 18%, 6px)
         }
-        &:hover:before {
+        &:hover::before {
             @include underline-left-to-right;
         }
-        &:hover:after {
+        &:hover::after {
             width: 0%;
         }
         }
@@ -378,16 +404,16 @@ menu-four - la palette du goût
         color: #6e4ccc;
         h2 {
             @include title-line;
-        &:before {
-            @include title-line-left(#6e4ccc, 25%, 5px)
+        &::before {
+            @include title-line-left(#6e4ccc, 18%, 6px)
         }
-        &:after {
-            @include title-line-right(#6e4ccc, 25%, 5px)
+        &::after {
+            @include title-line-right(#6e4ccc, 18%, 6px)
         }
-        &:hover:before {
+        &:hover::before {
             @include underline-left-to-right;
         }
-        &:hover:after {
+        &:hover::after {
             width: 0%;
         }
         }
@@ -401,16 +427,16 @@ menu-four - la palette du goût
     }
     h2 {
         @include title-line;
-        &:before {
-            @include title-line-left($color-menu-three, 30%, 4px)
+        &::before {
+            @include title-line-left($color-menu-three)
         }
-        &:after {
-            @include title-line-right($color-menu-three, 30%, 4px)
+        &::after {
+            @include title-line-right($color-menu-three)
         }
-        &:hover:before {
+        &:hover::before {
             @include underline-left-to-right;
         }
-        &:hover:after {
+        &:hover::after {
             width: 0%;
         }
     }
@@ -423,16 +449,16 @@ menu-four - la palette du goût
     }
     h2 {
         @include title-line;
-        &:before {
-            @include title-line-left($color-menu-four, 30%, 4px)
+        &::before {
+            @include title-line-left($color-menu-four)
         }
-        &:after {
-            @include title-line-right($color-menu-four, 30%, 4px)
+        &::after {
+            @include title-line-right($color-menu-four)
         }
-        &:hover:before {
+        &:hover::before {
             @include underline-left-to-right;
         }
-        &:hover:after {
+        &:hover::after {
             width: 0%;
         }
     }
