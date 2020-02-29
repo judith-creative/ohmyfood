@@ -219,6 +219,7 @@ header {
             }
             color: $color-menu-three;
             background: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);
+            background-clip: border-box;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -237,6 +238,7 @@ header {
             }
             color: $color-menu-four;
             background: -webkit-linear-gradient(left, #3e923a, #beff7f);
+            background-clip: border-box;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
