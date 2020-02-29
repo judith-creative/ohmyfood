@@ -50,24 +50,29 @@ $color-menu-four: #72bf56;
     background: $color;
     position: absolute;
     top: 50%;
+    transform: scaleX(1);
 }
 
 @mixin title-line-left($color, $width: 23%, $thickness: 4px) {
     @include side-title-line-common($color, $width, $thickness);
     left: 0;
-    transition: width .4s cubic-bezier(0, .5, 0, 1);
+    transform-origin: left;     
+    transition: transform .4s cubic-bezier(0, .5, 0, 1);
 }
 
 @mixin title-line-right($color, $width: 23%, $thickness: 4px) {
     @include side-title-line-common($color, $width, $thickness);
     right: 0;
-    transition: width;
+    transform-origin: right;
+    transition: transform;
 }
 
-@mixin underline-left-to-right {
-    top: 100%;
-    bottom: 0%;
-    width: 100%;
+@mixin underline-left-to-right($lenght: scalex(4.35)) {
+    transform: $lenght translateY(400%);
+}
+
+@mixin disappear-line {
+    transform: scaleX(0);
 }
 
 /*similarities on all pages*/
@@ -355,7 +360,7 @@ menu-four - la palette du goût
             @include underline-left-to-right;
         }
         &:hover::after {
-            width: 0%;
+            @include disappear-line;
         }
     }
 }
@@ -377,10 +382,10 @@ menu-four - la palette du goût
             @include title-line-right(#c67412, 15%, 6px)
         }
         &:hover::before {
-            @include underline-left-to-right;
+            @include underline-left-to-right(scalex(6.68));
         }
         &:hover::after {
-            width: 0%;
+            @include disappear-line;
         }
         }
     }
@@ -395,10 +400,10 @@ menu-four - la palette du goût
             @include title-line-right(#a56799, 18%, 6px)
         }
         &:hover::before {
-            @include underline-left-to-right;
+            @include underline-left-to-right(scalex(5.55));
         }
         &:hover::after {
-            width: 0%;
+            @include disappear-line;
         }
         }
     }
@@ -413,10 +418,10 @@ menu-four - la palette du goût
             @include title-line-right(#6e4ccc, 18%, 6px)
         }
         &:hover::before {
-            @include underline-left-to-right;
+            @include underline-left-to-right(scalex(5.55));
         }
         &:hover::after {
-            width: 0%;
+            @include disappear-line;
         }
         }
     }
@@ -439,7 +444,7 @@ menu-four - la palette du goût
             @include underline-left-to-right;
         }
         &:hover::after {
-            width: 0%;
+            @include disappear-line;
         }
     }
 }
@@ -461,7 +466,7 @@ menu-four - la palette du goût
             @include underline-left-to-right;
         }
         &:hover::after {
-            width: 0%;
+            @include disappear-line;
         }
     }
 }

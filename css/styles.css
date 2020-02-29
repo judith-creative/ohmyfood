@@ -186,6 +186,7 @@ header h1 {
   font-size: 2em;
   color: #0887fb;
   background: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -206,6 +207,7 @@ header h1 {
   font-size: 2em;
   color: #72bf56;
   background: -webkit-linear-gradient(left, #3e923a, #beff7f);
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -327,8 +329,10 @@ menu-four - la palette du goût
   background: #3c1218;
   position: absolute;
   top: 50%;
+  transform: scaleX(1);
   left: 0;
-  transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__one h2::after {
   content: "";
@@ -338,16 +342,16 @@ menu-four - la palette du goût
   background: #3c1218;
   position: absolute;
   top: 50%;
+  transform: scaleX(1);
   right: 0;
-  transition: width;
+  transform-origin: right;
+  transition: transform;
 }
 .__one h2:hover::before {
-  top: 100%;
-  bottom: 0%;
-  width: 100%;
+  transform: scalex(4.35) translateY(400%);
 }
 .__one h2:hover::after {
-  width: 0%;
+  transform: scaleX(0);
 }
 
 .__two {
@@ -376,8 +380,10 @@ menu-four - la palette du goût
   background: #c67412;
   position: absolute;
   top: 50%;
+  transform: scaleX(1);
   left: 0;
-  transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__two .first-course h2::after {
   content: "";
@@ -387,16 +393,16 @@ menu-four - la palette du goût
   background: #c67412;
   position: absolute;
   top: 50%;
+  transform: scaleX(1);
   right: 0;
-  transition: width;
+  transform-origin: right;
+  transition: transform;
 }
 .__two .first-course h2:hover::before {
-  top: 100%;
-  bottom: 0%;
-  width: 100%;
+  transform: scalex(6.68) translateY(400%);
 }
 .__two .first-course h2:hover::after {
-  width: 0%;
+  transform: scaleX(0);
 }
 .__two .main-course {
   color: #a56799;
@@ -415,8 +421,10 @@ menu-four - la palette du goût
   background: #a56799;
   position: absolute;
   top: 50%;
+  transform: scaleX(1);
   left: 0;
-  transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__two .main-course h2::after {
   content: "";
@@ -426,16 +434,16 @@ menu-four - la palette du goût
   background: #a56799;
   position: absolute;
   top: 50%;
+  transform: scaleX(1);
   right: 0;
-  transition: width;
+  transform-origin: right;
+  transition: transform;
 }
 .__two .main-course h2:hover::before {
-  top: 100%;
-  bottom: 0%;
-  width: 100%;
+  transform: scalex(5.55) translateY(400%);
 }
 .__two .main-course h2:hover::after {
-  width: 0%;
+  transform: scaleX(0);
 }
 .__two .dessert {
   color: #6e4ccc;
@@ -454,8 +462,10 @@ menu-four - la palette du goût
   background: #6e4ccc;
   position: absolute;
   top: 50%;
+  transform: scaleX(1);
   left: 0;
-  transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__two .dessert h2::after {
   content: "";
@@ -465,16 +475,16 @@ menu-four - la palette du goût
   background: #6e4ccc;
   position: absolute;
   top: 50%;
+  transform: scaleX(1);
   right: 0;
-  transition: width;
+  transform-origin: right;
+  transition: transform;
 }
 .__two .dessert h2:hover::before {
-  top: 100%;
-  bottom: 0%;
-  width: 100%;
+  transform: scalex(5.55) translateY(400%);
 }
 .__two .dessert h2:hover::after {
-  width: 0%;
+  transform: scaleX(0);
 }
 
 .__three {
@@ -499,8 +509,10 @@ menu-four - la palette du goût
   background: #0887fb;
   position: absolute;
   top: 50%;
+  transform: scaleX(1);
   left: 0;
-  transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__three h2::after {
   content: "";
@@ -510,16 +522,16 @@ menu-four - la palette du goût
   background: #0887fb;
   position: absolute;
   top: 50%;
+  transform: scaleX(1);
   right: 0;
-  transition: width;
+  transform-origin: right;
+  transition: transform;
 }
 .__three h2:hover::before {
-  top: 100%;
-  bottom: 0%;
-  width: 100%;
+  transform: scalex(4.35) translateY(400%);
 }
 .__three h2:hover::after {
-  width: 0%;
+  transform: scaleX(0);
 }
 
 .__four {
@@ -544,8 +556,10 @@ menu-four - la palette du goût
   background: #72bf56;
   position: absolute;
   top: 50%;
+  transform: scaleX(1);
   left: 0;
-  transition: width 0.4s cubic-bezier(0, 0.5, 0, 1);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 .__four h2::after {
   content: "";
@@ -555,16 +569,16 @@ menu-four - la palette du goût
   background: #72bf56;
   position: absolute;
   top: 50%;
+  transform: scaleX(1);
   right: 0;
-  transition: width;
+  transform-origin: right;
+  transition: transform;
 }
 .__four h2:hover::before {
-  top: 100%;
-  bottom: 0%;
-  width: 100%;
+  transform: scalex(4.35) translateY(400%);
 }
 .__four h2:hover::after {
-  width: 0%;
+  transform: scaleX(0);
 }
 
 /*# sourceMappingURL=styles.css.map */
