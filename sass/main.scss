@@ -157,6 +157,18 @@ header {
 }
 
 .menu-cover {
+    &.one {
+        background: $back-menu-one;
+    }
+    &.two {
+        background: $back-menu-two;
+    }
+    &.three {
+        background: $back-menu-three;
+    }
+    &.four {
+        background: $back-menu-four;
+    }
     height: auto;
     margin: 30px 0;
     border: 2px solid grey;

@@ -124,6 +124,18 @@ header h1 {
   border: 2px solid grey;
   overflow: hidden;
 }
+.menu-cover.one {
+  background: #fcdfdb;
+}
+.menu-cover.two {
+  background: #fff5fe;
+}
+.menu-cover.three {
+  background: #f9f9f9;
+}
+.menu-cover.four {
+  background: #fdfffd;
+}
 .menu-cover img {
   height: auto;
   margin: 0;
