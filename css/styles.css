@@ -386,6 +386,10 @@ menu-four - la palette du goût
   font-family: "Croissant One";
   color: #6e4ccc;
   margin: 0;
+  background: -webkit-linear-gradient(left, #c77412, #a56799, #6e4ccc);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .__two .first-course {
   color: #c67412;
@@ -518,6 +522,10 @@ menu-four - la palette du goût
   font-family: "Parisienne";
   color: #0887fb;
   margin: 0;
+  background: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .__three h2 {
   margin: 50px 0 28px 0;
@@ -565,6 +573,10 @@ menu-four - la palette du goût
   font-family: "Kaushan Script";
   color: #72bf56;
   margin: 0;
+  background: -webkit-linear-gradient(left, #3e923a, #beff7f);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .__four h2 {
   margin: 50px 0 28px 0;

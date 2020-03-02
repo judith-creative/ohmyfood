@@ -390,6 +390,10 @@ menu-four - la palette du goût
     background-color: $back-menu-two;
     h1 {
         @include menu-title('Croissant One', #6e4ccc);
+            background: -webkit-linear-gradient(left, #c77412, #a56799, #6e4ccc);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
     }
     font-family: 'PT Serif', serif;
     .first-course {
@@ -452,6 +456,10 @@ menu-four - la palette du goût
     background-color: $back-menu-three;
     h1 {
         @include menu-title('Parisienne', $color-menu-three);
+            background: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
     }
     h2 {
         @include title-line;
@@ -474,6 +482,10 @@ menu-four - la palette du goût
     background-color: $back-menu-four;
     h1 {
         @include menu-title('Kaushan Script', $color-menu-four);
+            background: -webkit-linear-gradient(left, #3e923a, #beff7f);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
     }
     h2 {
         @include title-line;
