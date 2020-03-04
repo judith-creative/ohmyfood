@@ -34,10 +34,16 @@ header h1 {
   margin: 0;
   font-weight: bold;
   font-size: 4em;
+  padding: 30px;
+  margin-bottom: 30px;
 }
 
 h1 {
   text-align: center;
+}
+
+.contenu h1 {
+  text-align: left;
 }
 
 main, .contenu {
@@ -56,7 +62,7 @@ footer {
     justify-content: space-between;
   }
 }
-@media (min-width: 768px) and (orientation: landscape) and (min-width: 768px) and (orientation: landscape) {
+@media (min-width: 768px) and (orientation: landscape) {
   footer .__button {
     border-radius: 0px;
   }
@@ -66,12 +72,12 @@ footer {
   footer .__button:last-child {
     text-align: right;
   }
-  footer .__button a {
-    display: block;
-  }
-  footer .__button a:hover {
-    animation: wiggle 0.5s infinite;
-  }
+}
+footer .__button a {
+  display: block;
+}
+footer .__button a:hover {
+  animation: wiggle 0.5s infinite;
 }
 
 @keyframes wiggle {
@@ -118,18 +124,13 @@ footer {
     grid-column-gap: 60px;
   }
 }
-header h1 {
-  padding: 30px;
-  margin-bottom: 30px;
-}
-
 @keyframes zoom {
   0% {
     transform: scale(1);
     opacity: 1;
   }
   100% {
-    transform: scale(1.28);
+    transform: scale(1.19);
     opacity: 0.5;
   }
 }
@@ -160,7 +161,6 @@ header h1 {
   background-color: #fcdfdb;
 }
 .menu-cover.one .fa-music {
-  text-align: center;
   font-size: 2.5em;
   color: #f15f62;
 }

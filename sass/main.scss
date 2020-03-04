@@ -91,11 +91,19 @@ header {
         margin: 0;
         font-weight: bold;
         font-size: 4em;
+        padding: 30px;
+        margin-bottom: 30px;
     }
 }
 
 h1 {
     text-align: center;
+}
+
+.contenu {
+    h1 {
+        text-align: left;
+    }
 }
 
 main, .contenu {
@@ -110,6 +118,7 @@ footer {
     @media (min-width: 768px) and (orientation: landscape) {
         display: flex;
         justify-content: space-between;
+    }
         .__button {
             @media (min-width: 768px) and (orientation: landscape) {
             border-radius: 0px;
@@ -119,6 +128,7 @@ footer {
             &:last-child {
                 text-align: right;
             }
+            }
             a {
                 display: block;
                 &:hover {
@@ -127,9 +137,6 @@ footer {
             }
         }
     }
-        
-    }
-}
 
 @keyframes wiggle {
   0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -155,20 +162,13 @@ footer {
     }
 }
 
-header {
-    h1 {
-        padding: 30px;
-        margin-bottom: 30px;
-    }
-}
-
 @keyframes zoom {
     0% {
         transform: scale(1);
         opacity: 1;
     }
     100% {
-        transform: scale(1.28);
+        transform: scale(1.19);
         opacity: 0.5;
     }
 }
@@ -196,7 +196,6 @@ header {
     &.one {
         background-color: $back-menu-one;
         .fa-music {
-            text-align: center;
             font-size: 2.5em;
             color: #f15f62;
         }
@@ -231,7 +230,7 @@ header {
         h1 {
             font-family: 'Alice', serif;    
             color: $color-menu-two;
-                font-size: 2.5em;
+            font-size: 2.5em;
             }
     }
     &.three {
