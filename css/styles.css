@@ -320,6 +320,7 @@ menu-four - la palette du goût
 }
 .menu p span:last-child {
   font-weight: bold;
+  padding-left: 3px;
 }
 
 .__one {
