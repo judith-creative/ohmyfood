@@ -181,6 +181,7 @@ footer {
     margin: 30px 0;
     border: 2px solid grey;
     text-align: center;
+    padding-top: 5em;
     a {
         text-decoration: none;
         display: block;
@@ -202,6 +203,7 @@ footer {
         p {
             font-family: 'Devonshire', cursive;
             font-size: 2em;
+            margin-top: 0;
             color: $color-menu-one;
             @media (min-width: 768px) and (orientation: landscape) {
                 font-size: 3.5em;
