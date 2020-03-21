@@ -1,9 +1,12 @@
 @import"./utils/variables";
 @import"./utils/mixins";
+
 @import"./base/siteStandards";
-@import"./lay-out/allPages";
+
 @import"./lay-out/header";
 @import"./lay-out/footer";
+@import"./lay-out/allPages";
+
 @import"./pages/index";
 @import"./pages/menuOne";
 @import"./pages/menuTwo";

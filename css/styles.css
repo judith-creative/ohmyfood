@@ -1,28 +1,5 @@
-@charset "UTF-8";
 body {
   margin: 0;
-}
-
-/*similarities on all pages*/
-.__button {
-  font-family: "Raleway", sans-serif;
-  background-color: #579c87;
-  color: #fdcb46;
-  text-align: center;
-  font-size: 1.8em;
-  padding: 5px;
-}
-@media (min-width: 768px) and (orientation: landscape) {
-  .__button {
-    margin: 0 auto 30px;
-    font-size: 2.2em;
-    padding: 15px;
-    width: 80%;
-  }
-}
-.__button a {
-  text-decoration: none;
-  color: #fdcb46;
 }
 
 header {
@@ -36,19 +13,6 @@ header h1 {
   font-size: 4em;
   padding: 30px;
   margin-bottom: 30px;
-}
-
-h1 {
-  text-align: center;
-}
-
-.contenu h1 {
-  text-align: left;
-}
-
-main, .contenu {
-  width: 80%;
-  margin: auto;
 }
 
 footer {
@@ -65,6 +29,7 @@ footer {
 @media (min-width: 768px) and (orientation: landscape) {
   footer .__button {
     border-radius: 0px;
+    margin-bottom: 0;
   }
   footer .__button:first-child {
     text-align: left;
@@ -115,7 +80,71 @@ footer .__button a:hover {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
-/* landing page*/
+/*allPages*/
+.__button {
+  font-family: "Raleway", sans-serif;
+  background-color: #579c87;
+  color: #fdcb46;
+  text-align: center;
+  font-size: 1.8em;
+  padding: 5px;
+}
+@media (min-width: 768px) and (orientation: landscape) {
+  .__button {
+    margin: 0 auto 30px;
+    font-size: 2.2em;
+    padding: 15px;
+    width: 80%;
+  }
+}
+.__button a {
+  text-decoration: none;
+  color: #fdcb46;
+}
+
+h1 {
+  text-align: center;
+}
+
+.contenu h1 {
+  text-align: left;
+}
+
+main, .contenu {
+  width: 80%;
+  margin: auto;
+}
+
+/*all menu pages*/
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 30px auto;
+  padding: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  font-family: "Kalam", cursive;
+  font-size: 0.8em;
+}
+@media (min-width: 768px) and (orientation: landscape) {
+  .menu {
+    font-size: 1.6em;
+  }
+}
+.menu h2 {
+  margin-top: 200px;
+}
+.menu p {
+  line-height: 2em;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.menu p span:last-child {
+  font-weight: bold;
+  padding-left: 3px;
+}
+
 @media (min-width: 768px) and (orientation: landscape) {
   main {
     display: grid;
@@ -253,12 +282,6 @@ footer .__button a:hover {
   }
 }
 
-@media (min-width: 768px) and (orientation: landscape) {
-  .footer .__button {
-    margin-bottom: 0;
-  }
-}
-
 .__button:nth-child(3) {
   display: flex;
   justify-content: center;
@@ -290,41 +313,6 @@ footer .__button a:hover {
     transform: translateY(-8px);
   }
 }
-/*
-menu-one - la note enchantée
-menu-two - le chic à la française
-menu-three - le délice des papilles
-menu-four - la palette du goût
-*/
-.menu {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin: 30px auto;
-  padding: 30px;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  font-family: "Kalam", cursive;
-  font-size: 0.8em;
-}
-@media (min-width: 768px) and (orientation: landscape) {
-  .menu {
-    font-size: 1.6em;
-  }
-}
-.menu h2 {
-  margin-top: 200px;
-}
-.menu p {
-  line-height: 2em;
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-}
-.menu p span:last-child {
-  font-weight: bold;
-  padding-left: 3px;
-}
-
 .__one {
   background-color: #fcdfdb;
   color: #3c1218;
